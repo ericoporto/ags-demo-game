@@ -45,8 +45,10 @@ jobs:
         run: |
           cd AGSQuest
           mv acsprset.spr acsprset.spr.keep
+          mv sprindex.dat sprindex.dat.keep
           git clean -fdX
           mv acsprset.spr.keep acsprset.spr
+          mv sprindex.dat.keep sprindex.dat
 
       - name: Copy licenses to project directory
         shell: bash
